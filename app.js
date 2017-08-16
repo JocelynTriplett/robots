@@ -8,7 +8,8 @@ const user_profiles = require('./profile_data.js')
 
 app.engine('mustache', mustache());
 app.use('/our-first-app', express.static('our-first-app'));
-app.set('public', './public');
+app.use(express.static(path.join(__dirname, 'public')));
+//app.set('public', './public');
 app.set('views', './views');
 app.set('view engine', 'mustache');
 
