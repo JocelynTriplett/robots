@@ -15,17 +15,16 @@
           <div class="card">
             <img src="{{avatar}}"/>
             <h1>{{name}}</h1>
-            <p>{{job}}</p>    
+            {{#job}}
+              <p class="job">{{job}}</p>
+            {{/job}}
+            {{^job}}
+              <p class="hire">Available for hire</p>
+            {{/job}}
           </div>
-
           {{/users}}
         </div>
       </div>
-   <ul>
-   {{#users}}
-     <li>{{name}}</li>
-   {{/users}}
-   </ul>
  </body>
 
  </html>
