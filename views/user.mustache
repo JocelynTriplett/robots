@@ -13,10 +13,11 @@
     <img src="{{avatar}}" />
     <div>
       <h1>{{name}}</h1>
-      <h2>{{#address.city}},{{/address.city}}
+      <p>
+        {{#address.city}}{{address.city}},{{/address.city}}
         {{address.country}} |
-          {{job}}</h2>
-      <h2>{{email}} | {{phone}}</h2>
+          {{job}}</p>
+      <p>{{email}} | {{phone}}</p>
     </div>
   </div>
     <div class="row2">
