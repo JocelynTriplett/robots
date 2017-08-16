@@ -5,12 +5,26 @@
     <meta charset="UTF-8">
     <title>User Directory</title>
     <meta name="description" content="DESCRIPTION">
-   <link rel="stylesheet" type="text/css" href="styles.css" />
+   <link rel="stylesheet" type="text/css" href="user_styles.css" />
 </head>
 
 <body>
-  <h1> What is going on?????</h1>
-  <h2>{{name}}</h2>
+  <div class="row1">
+    <img src="{{avatar}}" />
+    <div>
+      <h1>{{name}}</h1>
+      <h2>{{#address.city}},{{/address.city}}
+        {{address.country}} |
+          {{job}}</h2>
+      <h2>{{email}} | {{phone}}</h2>
+    </div>
+  </div>
+    <div class="row2">
+      <h3>Education: {{{education}}}</h3>
+      <h3>Skills: {{skills}}</h3>
+    </div>
+  </div>
+  <
 </body>
 
 </html>
