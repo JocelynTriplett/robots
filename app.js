@@ -15,11 +15,13 @@ app.set('view engine', 'mustache');
 
 console.log(user_profiles.users[1]);
 
+//output = Mustache.render( template, data );
+
 app.get('/', function(req, res){
-  res.render('index',
-    {user : user_profiles.users[1].name}
+   res.render('index', user_profiles)
+ }
   );
-});
+ //});
 
 app.listen(3000, function(){
   console.log("the app is running on port 3000!");
