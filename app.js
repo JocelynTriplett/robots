@@ -7,7 +7,7 @@ const request = require('request');
 const user_profiles = require('./profile_data.js')
 
 app.engine('mustache', mustache());
-app.use('/our-first-app', express.static('our-first-app'));
+app.use('/robots', express.static('robots'));
 app.use(express.static(path.join(__dirname, 'public')));
 //app.set('public', './public');
 app.set('views', './views');
